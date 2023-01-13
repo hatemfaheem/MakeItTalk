@@ -42,7 +42,7 @@ class Image_translation_block():
             self.G = ResUnetGenerator(input_nc=6, output_nc=3, num_downs=6, use_dropout=False)
 
         if (opt_parser.load_G_name != ''):
-            ckpt = torch.load(opt_parser.load_G_name)
+            ckpt = torch.load(opt_parser.load_G_name, map_location=torch.device('cpu'))
             try:
                 self.G.load_state_dict(ckpt['G'])
             except:

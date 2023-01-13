@@ -9,3 +9,8 @@ librosa
 pysptk
 pyworld
 resemblyzer
+tensorboardX
+matplotlib
+torchvision
+torch
+torchaudio

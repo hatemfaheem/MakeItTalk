@@ -36,20 +36,21 @@ Our method creates both non-photorealistic cartoon animations (top) and natural 
 - [x] Google colab quick demo for natural faces [[detail]](quick_demo.ipynb) [[TDLR]](quick_demo_tdlr.ipynb)
 - [ ] Training code for each module
 
-## Requirements
+## Setup
 - Python environment 3.6
 ```
-conda create -n makeittalk_env python=3.6
-conda activate makeittalk_env
+python3 -m venv .
+source ./bin/activate
 ```
 - ffmpeg (https://ffmpeg.org/download.html)
 ```
-sudo apt-get install ffmpeg
+brew install ffmpeg
 ```
 - python packages
 ```
 pip install -r requirements.txt
 ```
+
 - `winehq-stable` for cartoon face warping in Ubuntu (https://wiki.winehq.org/Ubuntu). Tested on Ubuntu16.04, wine==5.0.3.
 ```
 sudo dpkg --add-architecture i386

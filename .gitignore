@@ -1,0 +1,8 @@
+.DS_Store
+__pycache__/
+examples/
+share/
+bin/
+lib/
+pyvenv.cfg
+out.mp4
